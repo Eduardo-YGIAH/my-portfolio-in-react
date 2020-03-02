@@ -2,10 +2,107 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.home-heading {
-  color: white;
+.index-sub-heading {
+  margin: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: transparent;
+  animation: color 5s ease forwards 4s;
+}
+
+#heroHeading path:nth-child(2) {
+  stroke-dasharray: 311.0399169921875;
+  stroke-dashoffset: 311.0399169921875;
+  animation: line-anim 2s ease forwards;
+}
+#heroHeading path:nth-child(3) {
+  stroke-dasharray: 335.70947265625;
+  stroke-dashoffset: 335.70947265625;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#heroHeading path:nth-child(4) {
+  stroke-dasharray: 287.810302734375;
+  stroke-dashoffset: 287.810302734375;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#heroHeading path:nth-child(5) {
+  stroke-dasharray: 300.9276123046875;
+  stroke-dashoffset: 300.9276123046875;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#heroHeading path:nth-child(6) {
+  stroke-dasharray: 182.0531768798828;
+  stroke-dashoffset: 182.0531768798828;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#heroHeading path:nth-child(7) {
+  stroke-dasharray: 335.70916748046875;
+  stroke-dashoffset: 335.70916748046875;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#heroHeading path:nth-child(8) {
+  stroke-dasharray: 254.22634887695312;
+  stroke-dashoffset: 254.22634887695312;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#heroHeading path:nth-child(9) {
+  stroke-dasharray: 383.5700988769531;
+  stroke-dashoffset: 383.5700988769531;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+#heroHeading path:nth-child(10) {
+  stroke-dasharray: 300.99932861328125;
+  stroke-dashoffset: 300.99932861328125;
+  animation: line-anim 2s ease forwards 2.3s;
+}
+#heroHeading path:nth-child(11) {
+  stroke-dasharray: 213.62786865234375;
+  stroke-dashoffset: 213.62786865234375;
+  animation: line-anim 2s ease forwards 2.6s;
+}
+#heroHeading path:nth-child(12) {
+  stroke-dasharray: 254.22653198242188;
+  stroke-dashoffset: 254.22653198242188;
+  animation: line-anim 2s ease forwards 2.9s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes color {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #heroHeading {
+    width: 400px;
+    height: auto;
+  }
+  .index-sub-heading {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #heroHeading {
+    width: 300px;
+    height: auto;
+    top: 35%;
+  }
+  .index-sub-heading {
+    font-size: 24px;
+  }
 }
