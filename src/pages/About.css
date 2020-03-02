@@ -1,11 +1,54 @@
 .about-container {
   width: 100vw;
   height: 100vh;
+  padding: 60px 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.about-scrol-area {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.about-intro {
+  margin-top: 90px;
+}
+
+.about-intro,
+.about-sub-intro,
 .about-heading {
-  color: white;
+  margin-bottom: 20px;
+}
+
+.about-heading {
+  display: inline;
+  max-width: 50%;
+}
+
+.curriculum a,
+.bio-content p a {
+  text-decoration: none;
+  color: #ff8820;
+}
+
+.bio-content p {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.3rem;
+  text-shadow: lightpink 1px 1px 10px;
+}
+
+.contact-btn {
+  margin-top: 30px;
+  text-align: center;
 }

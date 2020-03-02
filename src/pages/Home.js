@@ -3,6 +3,8 @@ import './Home.css';
 import Button from '../components/Button';
 
 const Home = () => {
+  const btnData = { label: 'Portfolio', link: '/portfolio' };
+
   return (
     <div className='home-container'>
       <svg id='heroHeading' width='660' height='75' viewBox='0 0 660 75' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -98,7 +100,7 @@ const Home = () => {
 
       <h2 className='index-sub-heading'>Web Designer and Full Stack Developer</h2>
       <div className='portfolio-btn'>
-        <Button />
+        <Button btn={btnData} />
       </div>
     </div>
   );
