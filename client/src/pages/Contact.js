@@ -15,7 +15,7 @@ export default function Contact() {
 
   const formSubmit = e => {
     e.preventDefault();
-    console.log(name, email, msg);
+    console.log(payload);
     axios({
       url: '/contact/api/form',
       method: 'POST',
