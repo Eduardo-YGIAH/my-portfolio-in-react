@@ -1,0 +1,27 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A react aplication to showcase my work",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduardo-YGIAH/my-portfolio-in-react.git"
+  },
+  "author": "Eduardo Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eduardo-YGIAH/my-portfolio-in-react/issues"
+  },
+  "homepage": "https://github.com/Eduardo-YGIAH/my-portfolio-in-react#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1"
+  }
+}
