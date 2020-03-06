@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './SideDrawer.css';
+import SocialLinks from '../../../components/SocialLinks';
+import ContactIcons from '../../ContactIcons';
 
 export default function SideDrawer(props) {
   let drawerClasses = 'side-drawer';
@@ -22,6 +24,8 @@ export default function SideDrawer(props) {
         <NavLink className='side-drawer-link' to='/contact'>
           Contact
         </NavLink>
+        <ContactIcons />
+        <SocialLinks />
       </div>
     </nav>
   );

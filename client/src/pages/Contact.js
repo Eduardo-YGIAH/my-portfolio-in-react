@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Contact.css';
+import SocialLinks from '../components/SocialLinks';
+import ContactIcons from '../components/ContactIcons';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -55,6 +57,11 @@ export default function Contact() {
         <button className='btn' type='submit'>
           SEND
         </button>
+        <div className='spacer'></div>
+        <div className='icons-container'>
+          <SocialLinks />
+          <ContactIcons />
+        </div>
       </form>
     </div>
   );
