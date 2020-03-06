@@ -1,11 +1,56 @@
 .portfolio-container {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 60px 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
 }
 
 .portfolio-heading {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.portfolio-scrol-area {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.portfolio-scrol-area a {
+  text-decoration: none;
+}
+
+.card {
+  margin: 20px 10px;
+}
+
+.card__img {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+}
+
+.card__label {
   color: white;
+  text-align: center;
+  max-width: 300px;
+}
+
+.card__icon-link {
+  width: 18px;
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-bottom: -1px;
 }
