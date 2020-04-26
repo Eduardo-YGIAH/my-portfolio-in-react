@@ -17,7 +17,7 @@ export default function About() {
 
           <span className='curriculum'>
             <a
-              href='https://res.cloudinary.com/ygiah/image/upload/v1574711436/Documents/Full_Stack_Web_Developer.pdf'
+              href='https://res.cloudinary.com/ygiah/image/upload/v1587729226/Documents/CV-Eduardo-Developer.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -30,9 +30,9 @@ export default function About() {
             Node.js, Express, SQL and NoSQL databases such as MySQL and Mongodb.
           </p>
           <p>
-            My name is Eduardo and I am a Web Developer, born and raised in Lisbon, Portugal but living in Royal
-            Leamington Spa, UK for the last 6 years. <br />
-            Two years ago I found myself experimenting on creating a website and a tremendous passion/obsession for
+            My name is Eduardo and I am a Web Developer, born and raised in Lisbon Portugal, but living in Royal
+            Leamington Spa UK for the last 6 years. <br />
+            Three years ago I found myself experimenting on creating a website and a tremendous passion/obsession for
             learning code, emerged. <br />
             My professional dream has since then changed to become a highly-skilled, successful software developer.
             <br />
@@ -59,13 +59,20 @@ export default function About() {
             >
               coding Bootcamp in the UK promoted by Trilogy at the University of Birmingham
             </a>
-            . Excited with the perspective of having structured and intense learning, I immediately enrolled and I am
-            currently in the final stage of the course while maintaining an excelent academic average.
+            . Excited with the perspective of having structured and intense learning, I immediately enrolled and
+            completed the course in March 2020 with an excelent academic average.
+            <a
+              href='https://res.cloudinary.com/ygiah/image/upload/v1587730337/Documents/Coding_Boot_Camp_Certificate.pdf'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              View Certificate.
+            </a>
           </p>
           <p>
-            In this Portfolio website, I am posting some of my freelance work to small businesses and also some of the
-            projects made in Bootcamp that demonstrate the use of different technologies and hopefully will give a
-            glampse of my skills to future employers, possible clients or recruiters.
+            In this Portfolio website, I am posting some of my freelance work to small businesses and also some small
+            demo projects that demonstrate the use of different technologies, and hopefully will give a glampse of my
+            skills to future employers, possible clients or recruiters.
             <br />
             If that's you, I will be looking forward to hearing from you.
           </p>

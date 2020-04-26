@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Contact.css';
 import SocialLinks from '../components/SocialLinks';
 import ContactIcons from '../components/ContactIcons';
+import ShowConfirmation from '../components/ShowConfirmation';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -15,16 +16,18 @@ export default function Contact() {
     message: msg.trim(),
   };
 
+  const [formSubmission, setFormSubmission] = useState('');
+
   const formSubmit = e => {
     e.preventDefault();
-    console.log(payload);
     axios({
       url: '/contact/api/form',
       method: 'POST',
       data: payload,
     })
       .then(response => {
-        console.log(response);
+        const { message } = response.data;
+        setFormSubmission(message);
       })
       .catch(error => {
         console.log(error);
@@ -34,7 +37,7 @@ export default function Contact() {
   return (
     <div className='contact-container'>
       <form className='contact-form' onSubmit={formSubmit}>
-        <h1 className='heading'>Get In Touch</h1>
+        {formSubmission !== '' ? <ShowConfirmation value={formSubmission} name={payload.name} /> : ''}
         <div className='form-group'>
           <label htmlFor='name'>Your Name</label>
           <input type='text' required name='name' onChange={e => setName(e.target.value)} />
