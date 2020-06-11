@@ -17,7 +17,7 @@ export default function About() {
 
           <span className='curriculum'>
             <a
-              href='https://res.cloudinary.com/ygiah/image/upload/v1587729226/Documents/CV-Eduardo-Developer.pdf'
+              href='https://res.cloudinary.com/ygiah/image/upload/v1591874073/Documents/CV-Eduardo-Jun2020.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -31,7 +31,7 @@ export default function About() {
           </p>
           <p>
             My name is Eduardo and I am a Web Developer, born and raised in Lisbon Portugal, but living in Royal
-            Leamington Spa UK for the last 6 years. <br />
+            Leamington Spa UK for the last 7 years. <br />
             Three years ago I found myself experimenting on creating a website and a tremendous passion/obsession for
             learning code, emerged. <br />
             My professional dream has since then changed to become a highly-skilled, successful software developer.
