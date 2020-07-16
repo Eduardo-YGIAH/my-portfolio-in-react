@@ -33,7 +33,7 @@ export default function Portfolio() {
       imgSrc:
         'http://www.tutorials.yougetitathome.com/310e5f54054b/Image%2525202020-03-06%252520at%2525201.08.39%252520pm.png',
       altTag: 'Link to repository for Class Attendance app',
-      cardLabel: 'Class Atendance App',
+      cardLabel: 'Class Attendance App',
       gitHubLink: 'https://github.com/Eduardo-YGIAH/Student-Lesson-Register',
     },
     {
@@ -88,7 +88,7 @@ export default function Portfolio() {
     <div className='portfolio-container'>
       <h1 className='portfolio-heading'>Portfolio</h1>
       <div className='portfolio-scrol-area'>
-        {cardData.map(card => (
+        {cardData.map((card) => (
           <a
             className='card'
             key={cardData.indexOf(card)}
